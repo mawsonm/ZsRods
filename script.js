@@ -1,4 +1,4 @@
-var firebaseConfig = {
+/*var firebaseConfig = {
     apiKey: "AIzaSyB8flqkTgvw8i6CtaQQ-FV7vdMGuGkTvwE",
     authDomain: "z-s-rods.firebaseapp.com",
     databaseURL: "https://z-s-rods-default-rtdb.firebaseio.com",
@@ -11,3 +11,11 @@ var firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
   let database = firebase.database();
+*/
+var userFeed = new Instafeed({
+    get: 'user',
+    target: "instafeed-container",
+      resolution: 'low_resolution',
+    accessToken: 'IGQVJXMzZAiQkhmYmlCTGZAMZAEhnSVZApX2RrcmwwTnBMZAEdJZAXNxWVJOV2REUzZAYOFA3UTZAka2FGcWNKMkl4REFvaFQyLUdmTjJDNlJoNUhRNklBWWN1b3R5M2drTkVDTTV0YzVrT2MwUUtaNFE5b2ZAQWAZDZD'
+  });
+  userFeed.run();
