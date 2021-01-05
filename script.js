@@ -15,7 +15,9 @@
 var userFeed = new Instafeed({
     get: 'user',
     target: "instafeed-container",
+    limit: 4,
       resolution: 'low_resolution',
+      template: '<div class="col-lg-2 col-md-6"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" class="img-fluid" /></a></div>',
     accessToken: 'IGQVJXMzZAiQkhmYmlCTGZAMZAEhnSVZApX2RrcmwwTnBMZAEdJZAXNxWVJOV2REUzZAYOFA3UTZAka2FGcWNKMkl4REFvaFQyLUdmTjJDNlJoNUhRNklBWWN1b3R5M2drTkVDTTV0YzVrT2MwUUtaNFE5b2ZAQWAZDZD'
   });
   userFeed.run();
