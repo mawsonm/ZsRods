@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
 	margin: 0;
 	box-sizing: border-box;
@@ -75,6 +76,7 @@
   color: #6d6d6d;
   text-align: left;
   line-height: 1.6;
+  padding-bottom: 10px;
 }
 #instafeed-container{
 	margin: 20px 50px;
@@ -88,24 +90,72 @@
 	height: 90px;
 	width: 90px;
 	border-radius: 50%;
-	float: left;
 }
 #acct-name{
-	display: inline;
+	display: flex;
+	flex-direction: column;
 	font-family: font-family: Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
 }
 
 #user-info{
 	padding: 10px;
 	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
 }
 .row{
 	justify-content: center;
 }
+hr{
+	border: dotted #EAF6F6;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+#shopPic{
+	width: 800px;
+	height: auto;
+	justify-content: center;
+}
+#overlay{
+	width: 800px;
+	height: 582px;
+	justify-content: center;
+	background-color: rgba(19,41,61,0.3);
+}
+#shopTitle{
+	margin-bottom: 25px;
+  font-size: 40px;
+  font-style: italic;
+  font-family: 'Bitter', serif;
+  color: #333333;
+  text-shadow: none;
+  text-align: center;
+}
+#center{
+	position: relative;
+}
+#center button{
+	position: absolute;
+	font-family: "Montserrat", sans-serif;
+	top: 50%;
+	width: 8%;
+	height: 8%;
+	padding: 5px 10px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+}
+#center button:hover{
+	background-color: rgba(0,136,169,0.8);
+}
 
 /*products page*/
 .title{
-	font-family: Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+	font-family: 'Bitter', serif;
 }
 .sort{
 	padding-right: 10px;
@@ -138,3 +188,26 @@ select{
 }
 /*Contact Page */
 
+#inputBox{
+	padding-bottom: 25px;
+}
+#contactSubmit{
+	padding-top: 25px;
+}
+#numberEmail{
+	padding-left: 30px;
+}
+#paddingBtwn{
+	padding-bottom: 40px;
+}
+#numberEmail h2{
+	padding-bottom: 20px;
+}
+#bgContact h3{
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
+}
+#bgContact h4{
+	font-size: 24px;
+	padding-bottom: 20px;
+}
